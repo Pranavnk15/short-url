@@ -8,7 +8,6 @@ async function handleUserSignup(req, res) {
         name,
         email,
         password,
-        createdBy: req.user._id,
     });
     return res.redirect("/");
 }   
